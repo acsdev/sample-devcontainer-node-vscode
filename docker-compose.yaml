@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  devcontainer:
+    build: .
+    container_name: devcontainer_react
+    # command RUNS DIRECTLY WHEN docker compose up
+    # .devcontainer/docker-compose.yaml OVERRIDES it for keep the devcontainer open
+    # use it, if you want to execute something when you run `docker compose up` without work with devcontainers
+    # command: sh -c '<ANY COMMAND'
