@@ -16,3 +16,5 @@ RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | b
 && . "$NVM_DIR/nvm.sh" && nvm alias default v${NODE_VERSION} \
 && node --version \
 && npm --version
+
+RUN npm install --global yarn
